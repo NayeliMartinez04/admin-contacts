@@ -20,6 +20,8 @@ server.get("/addContact", (request, response) => {
 //api methods
 server.get("/getContacts", ContactController.getContacts);
 server.post("/createContact", ContactController.createContact);
+server.put("/updateContact/:id", ContactController.updateContact);
+server.delete("/deleteContact/:id", ContactController.deleteContact);
 
 server.use((request, response) => {
   return response.sendFile(__dirname + "/views/404.html");
