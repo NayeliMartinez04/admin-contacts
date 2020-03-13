@@ -135,7 +135,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./index2.html" class="nav-link">
+                    <a href="/addContact" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Add contact</p>
                     </a>
@@ -196,55 +196,12 @@
                   <table class="table table-hover text-nowrap">
                     <thead>
                       <tr>
-                        <th>ID</th>
-                        <th>User</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                        <th>Reason</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <td>183</td>
-                        <td>John Doe</td>
-                        <td>11-7-2014</td>
-                        <td><span class="tag tag-success">Approved</span></td>
-                        <td>
-                          Bacon ipsum dolor sit amet salami venison chicken
-                          flank fatback doner.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>219</td>
-                        <td>Alexander Pierce</td>
-                        <td>11-7-2014</td>
-                        <td><span class="tag tag-warning">Pending</span></td>
-                        <td>
-                          Bacon ipsum dolor sit amet salami venison chicken
-                          flank fatback doner.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>657</td>
-                        <td>Bob Doe</td>
-                        <td>11-7-2014</td>
-                        <td><span class="tag tag-primary">Approved</span></td>
-                        <td>
-                          Bacon ipsum dolor sit amet salami venison chicken
-                          flank fatback doner.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>175</td>
-                        <td>Mike Doe</td>
-                        <td>11-7-2014</td>
-                        <td><span class="tag tag-danger">Denied</span></td>
-                        <td>
-                          Bacon ipsum dolor sit amet salami venison chicken
-                          flank fatback doner.
-                        </td>
-                      </tr>
-                    </tbody>
+                    <tbody id="table"></tbody>
                   </table>
                 </div>
                 <!-- /.card-body -->
@@ -306,6 +263,8 @@
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <!-- <script src="dist/js/pages/dashboard.js"></script> -->
     <!-- AdminLTE for demo purposes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="dist/js/demo.js"></script>
+    <script src="js/contacts.js"></script>
   </body>
 </html>

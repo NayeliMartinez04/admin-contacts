@@ -32,5 +32,5 @@ btnSave.onclick = async function() {
     phone: phone.value
   });
 
-  // window.location.href = "/contacts";
+  window.location.href = "/contacts";
 };
