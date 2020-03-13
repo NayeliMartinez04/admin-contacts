@@ -15,7 +15,7 @@ class ContactController {
   async updateContact(req, res) {
     const { id } = req.params;
     const body = req.body;
-    const contact = await UserModel.updateById(id, body);
+    const contact = await UserModel.update({ _id: id }, body);
     return res.send(contact);
   }
 

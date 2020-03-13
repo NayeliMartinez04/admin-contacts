@@ -232,6 +232,85 @@
     </div>
     <!-- ./wrapper -->
 
+    <div class="modal fade" id="modal-default" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="Enter your email"
+                  />
+                  <span
+                    id="exampleInputEmail1-error"
+                    class="error invalid-feedback"
+                    >Please enter a email address</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputName1">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputName1"
+                    placeholder="Enter your Name"
+                  />
+                  <span
+                    id="exampleInputName1-error"
+                    class="error invalid-feedback"
+                    >Please enter a name</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPhone1">Phone</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="exampleInputPhone1"
+                    placeholder="Enter your phone"
+                  />
+                  <span
+                    id="exampleInputPhone1-error"
+                    class="error invalid-feedback"
+                    >Please enter a phone</span
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default pull-left"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" onclick="update()" class="btn btn-primary">
+              Update changes
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
