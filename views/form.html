@@ -181,32 +181,49 @@
                       type="email"
                       class="form-control"
                       id="exampleInputEmail1"
-                      placeholder="Enter email"
+                      placeholder="Enter your email"
                     />
+                    <span
+                      id="exampleInputEmail1-error"
+                      class="error invalid-feedback"
+                      >Please enter a email address</span
+                    >
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Name</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="exampleInputPassword1"
-                      placeholder="Enter Name"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Phone</label>
+                    <label for="exampleInputName1">Name</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleInputPassword1"
+                      id="exampleInputName1"
+                      placeholder="Enter your Name"
+                    />
+                    <span
+                      id="exampleInputName1-error"
+                      class="error invalid-feedback"
+                      >Please enter a name</span
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPhone1">Phone</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="exampleInputPhone1"
                       placeholder="Enter your phone"
                     />
+                    <span
+                      id="exampleInputPhone1-error"
+                      class="error invalid-feedback"
+                      >Please enter a phone</span
+                    >
                   </div>
                 </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Add</button>
+                  <button type="button" id="btnSave" class="btn btn-primary">
+                    Add
+                  </button>
                 </div>
               </form>
             </div>
@@ -277,5 +294,6 @@
     <!-- <script src="dist/js/pages/dashboard.js"></script> -->
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
