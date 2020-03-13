@@ -3,7 +3,7 @@ const name = document.getElementById("exampleInputName1");
 const phone = document.getElementById("exampleInputPhone1");
 const btnSave = document.getElementById("btnSave");
 
-btnSave.onclick = function() {
+btnSave.onclick = async function() {
   if (!email.value) {
     email.classList.add("is-invalid");
   } else {
@@ -26,5 +26,11 @@ btnSave.onclick = function() {
     return;
   }
 
-  window.location.href = "/contacts";
+  await axios.post("/createContact", {
+    name: name.value,
+    email: email.value,
+    phone: phone.value
+  });
+
+  // window.location.href = "/contacts";
 };
