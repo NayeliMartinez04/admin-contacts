@@ -25,6 +25,6 @@ server.use((request, response) => {
   return response.sendFile(__dirname + "/views/404.html");
 });
 
-server.listen(3000, () => {
+server.listen(process.env.PORT || 3000, () => {
   console.log("Aplication running!");
 });
